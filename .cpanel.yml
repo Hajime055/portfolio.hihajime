@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/hihajime/portfolio.hihajime.dcreate.domains/
+    - /bin/cp -R * $DEPLOYPATH
