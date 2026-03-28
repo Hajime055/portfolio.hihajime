@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Gallery - Hajime Inada</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ギャラリー専用のスタイル */
+        .gallery-container {
+            padding: 20px;
+            column-count: 3; /* 横に3列並べる */
+            column-gap: 15px;
+        }
+        .gallery-item {
+            margin-bottom: 15px;
+            break-inside: avoid;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .gallery-container { column-count: 2; }
+        }
+        @media (max-width: 480px) {
+            .gallery-container { column-count: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">← Back to Home</a>
+        </nav>
+        <h1>Animal Gallery</h1>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/animal/main.jpg" alt="Animal Photo 1">
+        </div>
+
+<p>ここからギャラリーに画像を追加する。</p>
+		
+		    <div class="gallery-item">
+		        <img src="images/animal/IMG_7230.JPG" alt="Hawk in snow">
+		    </div>
+		
+		    <div class="gallery-item">
+		        <img src="images/animal/IMG_7086.JPG" alt="Sea Dragon in Georgia Aquarium">
+		    </div>
+
+		    <div class="gallery-item">
+		        <img src="images/animal/IMG_7392.JPG" alt="Lizard in a mountain">
+		    </div>
+		    
+        </main>
+
+    <footer>
+        <p>&copy; 2026 Hajime Inada</p>
+    </footer>
+</body>
+</html>
